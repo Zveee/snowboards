@@ -1,16 +1,16 @@
 {
-  "name": "EPIC_starter_kit",
+  "name": "snowboards",
   "version": "1.0.0",
   "description": "Start.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/gulp"
   },
-  "author": "Nikolay Gromov",
+  "author": "Elizaveta Selezneva",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicothin/epic_start-kit"
+    "url": "https://github.com/Zveee/snowboards"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
