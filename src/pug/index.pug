@@ -4,14 +4,15 @@ head
 	meta(charset="UTF-8")
 	meta(name="viewport" content="width=device-width, initial-scale=1.0")
 	title Школа сноуборда и горных лыж
+	link(rel='stylesheet', href='../less/blocks/normalize.css')
 	link(rel='stylesheet', href='../css/style.css')
 	link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|Rubik:400,500,700,900&amp;subset=cyrillic-ext')
 body
 
 	header.page-header
+
 		.page-header__inner
 			.page-header__menu
-
 				.menu__logo
 					a(href="#")
 
@@ -29,13 +30,246 @@ body
 					a(href="tel:8-800-800-80-80") 8 (800) 800-80-80
 
 				.menu__button
-					a(href="#") ЗАПИСАТЬСЯ
+					a(href="#").register ЗАПИСАТЬСЯ
 					
 
 	main
 
 		section.programs
+
+			.programs__inner
+
+				h1.title
+				h2.subtitle
+				table.programs__table
+					tr.table__item
+						td.type
+							span
+								| Сноуборд
+						td.instructor
+							a(href="#") Константин Константинопольский
+						td.date
+							span
+								| 30.03.2017
+						td.time
+							span
+								| 12:00
+						td.price
+							span
+								| 2000 руб.
+						td.button
+							a(href="#") ЗАПИСАТЬСЯ
+
+					tr.table__item
+						td.type
+							span
+								| Сноуборд
+						td.instructor
+							a(href="#") Константин Константинопольский
+						td.date
+							span
+								| 01.04.2017 
+						td.time
+							span
+								| 12:00
+						td.price
+							span
+								| 2000 руб.
+						td.button
+							a(href="#") ЗАПИСАТЬСЯ
+
+					tr.table__item
+						td.type
+							span
+								| Лыжи
+						td.instructor
+							a(href="#") Степан Александров
+						td.date
+							span
+								| 01.04.2017  
+						td.time
+							span
+								| 13:00
+						td.price
+							span
+								| 3000 руб.
+						td.button
+							a(href="#") ЗАПИСАТЬСЯ
+
+					tr.table__item
+						td.type
+							span
+								| Лыжи
+						td.instructor
+							a(href="#") Виталий Сергеев
+						td.date
+							span
+								| 03.04.2017 
+						td.time
+							span
+								| 14:00
+						td.price
+							span
+								| 4000 руб.
+						td.button
+							a(href="#") ЗАПИСАТЬСЯ
+
+					tr.table__item
+						td.type
+							span
+								| Сноуборд
+						td.instructor
+							a(href="#") Арсений Петров
+						td.date
+							span
+								| 04.04.2017 
+						td.time
+							span
+								| 14:00
+						td.price
+							span
+								| 4000 руб.
+						td.button
+							a(href="#") ЗАПИСАТЬСЯ
+
+		section.promo__cards
+
+			.cards__inner
+
+				.cards__item
+					.face
+						img
+						span
+							| Константин Константинопольский
+					.description
+						h1.title
+							| Free Ride / продвинутый уровень
+						span.text
+							| Дата занятия - 30 марта 2017 года.
+						h2.subtitle
+							| Абонемент на разовое посещение (3 часа)
+						p.text
+							| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.
+						a(href="#").more Узнать больше
+					.cost
+						span
+							| 2000 Р
+						a(href="#").buy
+
+				.cards__item
+					.face
+						img
+						span
+							| Константин Константинопольский
+					.description
+						h1.title
+							| Free Ride / продвинутый уровень
+						span.text
+							| Дата занятия - 30 марта 2017 года.
+						h2.subtitle
+							| Абонемент на разовое посещение (3 часа)
+						p.text
+							| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности. 
+						a(href="#").more Узнать больше
+					.cost
+						span
+							| 2000 Р
+						a(href="#").buy
+
+				.cards__item
+					.face
+						img
+						span
+							| Константин Константинопольский
+					.description
+						h1.title
+							| Free Ride / продвинутый уровень
+						span.text
+							| Дата занятия - 30 марта 2017 года.
+						h2.subtitle
+							| Абонемент на разовое посещение (3 часа)
+						p.text
+							| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности. 
+						a(href="#").more Узнать больше
+					.cost
+						span
+							| 2000 Р
+						a(href="#").buy
+
+				.cards__item
+					.face
+						img
+						span
+							| Константин Константинопольский
+					.description
+						h1.title
+							| Free Ride / продвинутый уровень
+						span.text
+							| Дата занятия - 30 марта 2017 года.
+						h2.subtitle
+							| Абонемент на разовое посещение (3 часа)
+						p.text
+							| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности. 
+						a(href="#").more Узнать больше
+					.cost
+						span
+							| 2000 Р
+						a(href="#").buy
+
+				.cards__item
+					.face
+						img
+						span
+							| Константин Константинопольский
+					.description
+						h1.title
+							| Free Ride / продвинутый уровень
+						span.text
+							| Дата занятия - 30 марта 2017 года.
+						h2.subtitle
+							| Абонемент на разовое посещение (3 часа)
+						p.text
+							| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности. 
+						a(href="#").more Узнать больше
+					.cost
+						span
+							| 2000 Р
+						a(href="#").buy
+				
+				.cards__pages
+					a(href="#") 1
+					a(href="#") 2
+					a(href="#") 3
+					a(href="#") 4
+					a(href="#") 5
+
+		section.callback
+
+			.callback__inner
+
+				h1.title
+				h2.subtitle
+					| *Имя
+					input.callback__item
+				h2.subtitle
+					| *Фамилия
+					input.callback__item
+				h2.subtitle
+					| *Телефон
+					input.callback__item
+				h2.subtitle
+					| Ваше сообщение
+					input.callback__item
+				a(href="#").send
+
+
+
+	footer.page-footer
+
+		.page-footer__inner
+		
 			
+
 
 
 	
