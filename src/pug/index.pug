@@ -13,8 +13,8 @@ body
 
 		.page-header__inner
 			ul.page-header__menu
-				li.menu__item.logo
-					a(href="#") ICE AGE
+				li.menu__item
+					a.logo(href="#") ICE ACE
 				li.menu__item
 					a(href="#") расписание 
 				li.menu__item
@@ -23,10 +23,10 @@ body
 					a(href="#") стоимость
 				li.menu__item
 					a(href="#") как добраться
-				li.menu__item.tel
-					a(href="tel:8-800-800-80-80") 8 (800) 800-80-80
-				li.menu__item.button
-					a(href="#").register ЗАПИСАТЬСЯ
+				li.menu__item
+					a.tel(href="tel:8-800-800-80-80") 8 (800) 800-80-80
+				li.menu__item
+					a.button-reg(href="#") ЗАПИСАТЬСЯ
 					
 
 	main
@@ -36,98 +36,115 @@ body
 			.programs__inner
 
 				h1.title
+					| Выбрать программу
 				h2.subtitle
 				table.programs__table
-					tr.
+					tr.table__item.caption
+						td
+							span
+								| Спорт
+						td
+							span
+								| Инструктор
+						td
+							span
+								| Дата
+						td
+							span
+								| Время
+						td
+							span
+								| Стоимость
+
 					tr.table__item
-						td.type
+						td
 							span
 								| Сноуборд
-						td.instructor
-							a(href="#") Константин Константинопольский
-						td.date
+						td
+							a.instructor(href="#") Константин Константинопольский
+						td
 							span
 								| 30.03.2017
-						td.time
+						td
 							span
 								| 12:00
-						td.price
+						td
 							span
 								| 2000 руб.
-						td.button
-							a(href="#") ЗАПИСАТЬСЯ
+						td
+							a.button-table-reg(href="#") ЗАПИСАТЬСЯ
 
 					tr.table__item
-						td.type
+						td
 							span
 								| Сноуборд
-						td.instructor
-							a(href="#") Константин Константинопольский
-						td.date
+						td
+							a.instructor(href="#") Константин Константинопольский
+						td
 							span
 								| 01.04.2017 
-						td.time
+						td
 							span
 								| 12:00
-						td.price
+						td
 							span
 								| 2000 руб.
-						td.button
-							a(href="#") ЗАПИСАТЬСЯ
+						td
+							a.button-table-reg(href="#") ЗАПИСАТЬСЯ
 
 					tr.table__item
-						td.type
+						td
 							span
 								| Лыжи
-						td.instructor
-							a(href="#") Степан Александров
-						td.date
+						td
+							a.instructor(href="#") Степан Александров
+						td
 							span
 								| 01.04.2017  
-						td.time
+						td
 							span
 								| 13:00
-						td.price
+						td
 							span
 								| 3000 руб.
-						td.button
-							a(href="#") ЗАПИСАТЬСЯ
+						td
+							a.button-table-reg(href="#") ЗАПИСАТЬСЯ
 
 					tr.table__item
-						td.type
+						td
 							span
 								| Лыжи
-						td.instructor
-							a(href="#") Виталий Сергеев
-						td.date
+						td
+							a.instructor(href="#") Виталий Сергеев
+						td
 							span
 								| 03.04.2017 
-						td.time
+						td
 							span
 								| 14:00
-						td.price
+						td
 							span
 								| 4000 руб.
-						td.button
-							a(href="#") ЗАПИСАТЬСЯ
+						td
+							a.button-table-reg(href="#") ЗАПИСАТЬСЯ
 
 					tr.table__item
-						td.type
+						td
 							span
 								| Сноуборд
-						td.instructor
-							a(href="#") Арсений Петров
-						td.date
+						td
+							a.instructor(href="#") Арсений Петров
+						td
 							span
 								| 04.04.2017 
-						td.time
+						td
 							span
 								| 14:00
-						td.price
+						td
 							span
 								| 4000 руб.
-						td.button
-							a(href="#") ЗАПИСАТЬСЯ
+						td
+							a.button-table-reg(href="#") ЗАПИСАТЬСЯ
 
 		section.promo__cards
 
@@ -245,6 +262,7 @@ body
 			.callback__inner
 
 				h1.title
+					| Заказать обратный звонок
 				h2.subtitle
 					| *Имя
 					input.callback__item
