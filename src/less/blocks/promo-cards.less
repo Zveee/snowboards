@@ -1,9 +1,65 @@
 .cards {
+	position: relative;
 
 	&__item {
-		padding: 20px;
+		padding: 40px 60px;
 		margin: 40px 0;
 		border: 2px solid #000;
+
+		display: flex;
+		flex-flow: row nowrap;
 	}
-	
+} 
+
+.face {
+	width: 200px;
+
+	&__img {
+		display: block;
+		border: 3px solid @link-color;
+		border-radius: 50%;
+	}
+
+	&__name {
+		display: block;
+		padding: 5px;
+		background-color: #000;
+		color: #fff;
+	}
 }
+
+.description {
+	width: 550px;
+	text-align: left;
+	margin-left: 100px;
+
+	&__title {
+		display: block;
+		font-size: 30px;
+		font-family: @titles;
+		font-weight: @big-weight;
+		margin: 0;
+	}
+
+	&__text {
+		width: 80%;
+	}
+}
+
+.cost span {
+	display: block;
+	font-size: 30px;
+	font-weight: @med-weight;
+}
+
+
+.cards__pages a {
+	padding: 5px 5px;
+	font-weight: @big-weight;
+	font-size: @med-size;
+}
+
+.cards__pages a:hover {
+	color: @link-color;
+}
+

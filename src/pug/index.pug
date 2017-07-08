@@ -14,7 +14,7 @@ body
 		.page-header__inner
 			ul.page-header__menu
 				li.menu__item
-					a.logo(href="#") ICE ACE
+					img.logo(src="../img/logo.png", alt="")
 				li.menu__item
 					a(href="#") расписание 
 				li.menu__item
@@ -26,7 +26,7 @@ body
 				li.menu__item
 					a.tel(href="tel:8-800-800-80-80") 8 (800) 800-80-80
 				li.menu__item
-					a.button-reg(href="#") ЗАПИСАТЬСЯ
+					a.button(href="#") ЗАПИСАТЬСЯ
 					
 
 	main
@@ -37,26 +37,26 @@ body
 
 				h1.title
 					| Выбрать программу
-				h2.subtitle
-				table.programs__table
-					tr.table__item.caption
-						td
-							span
+				table.programs.table
+
+					tr.caption__row
+						th.no-border.no-padding
+							span.subtitle
 								| Спорт
-						td
-							span
+						th.no-border.no-padding
+							span.subtitle
 								| Инструктор
-						td
-							span
+						th.no-border.no-padding
+							span.subtitle
 								| Дата
-						td
-							span
+						th.no-border.no-padding
+							span.subtitle
 								| Время
-						td
-							span
+						th.no-border.no-padding
+							span.subtitle
 								| Стоимость
 
-					tr.table__item
+					tr.programs__row
 						td
 							span
 								| Сноуборд
@@ -71,10 +71,10 @@ body
 						td
 							span
 								| 2000 руб.
-						td
-							a.button-table-reg(href="#") ЗАПИСАТЬСЯ
+						td.center
+							a.reg(href="#") ЗАПИСАТЬСЯ
 
-					tr.table__item
+					tr.programs__row
 						td
 							span
 								| Сноуборд
@@ -89,10 +89,10 @@ body
 						td
 							span
 								| 2000 руб.
-						td
-							a.button-table-reg(href="#") ЗАПИСАТЬСЯ
+						td.center
+							a.reg(href="#") ЗАПИСАТЬСЯ
 
-					tr.table__item
+					tr.programs__row
 						td
 							span
 								| Лыжи
@@ -107,10 +107,10 @@ body
 						td
 							span
 								| 3000 руб.
-						td
-							a.button-table-reg(href="#") ЗАПИСАТЬСЯ
+						td.center
+							a.reg(href="#") ЗАПИСАТЬСЯ
 
-					tr.table__item
+					tr.programs__row
 						td
 							span
 								| Лыжи
@@ -125,10 +125,10 @@ body
 						td
 							span
 								| 4000 руб.
-						td
-							a.button-table-reg(href="#") ЗАПИСАТЬСЯ
+						td.center
+							a.reg(href="#") ЗАПИСАТЬСЯ
 
-					tr.table__item
+					tr.programs__row
 						td
 							span
 								| Сноуборд
@@ -143,8 +143,8 @@ body
 						td
 							span
 								| 4000 руб.
-						td
-							a.button-table-reg(href="#") ЗАПИСАТЬСЯ
+						td.center
+							a.reg(href="#") ЗАПИСАТЬСЯ
 
 		section.promo__cards
 
@@ -152,103 +152,26 @@ body
 
 				.cards__item
 					.face
-						img
-						span
+						img.face__img(src="../img/face.png", alt="")
+						span.face__name
 							| Константин Константинопольский
+
 					.description
-						h1.title
+						h3.description__title
 							| Free Ride / продвинутый уровень
-						span.text
+						p.description__text
 							| Дата занятия - 30 марта 2017 года.
-						h2.subtitle
+						h2.description__subtitle
 							| Абонемент на разовое посещение (3 часа)
-						p.text
+						p.description__text
 							| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.
-						a(href="#").more Узнать больше
-					.cost
-						span
-							| 2000 Р
-						a(href="#").buy
+						a.more(href="#") Узнать больше
 
-				.cards__item
-					.face
-						img
-						span
-							| Константин Константинопольский
-					.description
-						h1.title
-							| Free Ride / продвинутый уровень
-						span.text
-							| Дата занятия - 30 марта 2017 года.
-						h2.subtitle
-							| Абонемент на разовое посещение (3 часа)
-						p.text
-							| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности. 
-						a(href="#").more Узнать больше
 					.cost
 						span
 							| 2000 Р
-						a(href="#").buy
+						a.button(href="#") КУПИТЬ
 
-				.cards__item
-					.face
-						img
-						span
-							| Константин Константинопольский
-					.description
-						h1.title
-							| Free Ride / продвинутый уровень
-						span.text
-							| Дата занятия - 30 марта 2017 года.
-						h2.subtitle
-							| Абонемент на разовое посещение (3 часа)
-						p.text
-							| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности. 
-						a(href="#").more Узнать больше
-					.cost
-						span
-							| 2000 Р
-						a(href="#").buy
-
-				.cards__item
-					.face
-						img
-						span
-							| Константин Константинопольский
-					.description
-						h1.title
-							| Free Ride / продвинутый уровень
-						span.text
-							| Дата занятия - 30 марта 2017 года.
-						h2.subtitle
-							| Абонемент на разовое посещение (3 часа)
-						p.text
-							| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности. 
-						a(href="#").more Узнать больше
-					.cost
-						span
-							| 2000 Р
-						a(href="#").buy
-
-				.cards__item
-					.face
-						img
-						span
-							| Константин Константинопольский
-					.description
-						h1.title
-							| Free Ride / продвинутый уровень
-						span.text
-							| Дата занятия - 30 марта 2017 года.
-						h2.subtitle
-							| Абонемент на разовое посещение (3 часа)
-						p.text
-							| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности. 
-						a(href="#").more Узнать больше
-					.cost
-						span
-							| 2000 Р
-						a(href="#").buy
 				
 				.cards__pages
 					a(href="#") 1
@@ -261,21 +184,26 @@ body
 
 			.callback__inner
 
-				h1.title
+				h2.title
 					| Заказать обратный звонок
-				h2.subtitle
-					| *Имя
-					input.callback__item
-				h2.subtitle
-					| *Фамилия
-					input.callback__item
-				h2.subtitle
-					| *Телефон
-					input.callback__item
-				h2.subtitle
-					| Ваше сообщение
-					input.callback__item
-				a(href="#").send
+				form.callback.form
+					span.form__subtitle
+						| *Имя
+					input.form__input(type="text")
+
+					span.form__subtitle
+						| *Фамилия
+					input.form__input(type="text")
+
+					span.form__subtitle
+						| *Телефон
+					input.form__input(type="tel")
+
+					span.form__subtitle
+						| Ваше сообщение
+					textarea.form__input(type="text")
+
+					input.form__input(type="submit" value="Отправить")
 
 
 
