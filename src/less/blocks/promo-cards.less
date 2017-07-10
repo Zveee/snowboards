@@ -1,8 +1,15 @@
+.promo__cards {
+
+	.container();
+
+	margin-bottom: 60px;
+}
+
 .cards {
 	position: relative;
 
 	&__item {
-		padding: 40px 60px;
+		padding: 40px 60px 60px;
 		margin: 40px 0;
 		border: 2px solid #000;
 
@@ -11,8 +18,69 @@
 	}
 } 
 
+.slider-item:focus {
+	outline: none;
+}
+
+.slick-prev:before, .slick-next:before  {
+	color: @link-color;
+}
+
+.slick-prev {
+	left: 490px;
+
+	&:before {
+		transform: rotate(135deg);
+		left: 10px;
+	}
+}
+
+.slick-next {
+	right: 490px;
+
+	&:before {
+		transform: rotate(-45deg);
+		right: 10px;
+	}
+}
+
+.slick-arrow {
+	bottom: -27px;
+	top: initial;
+	z-index: 10;
+	height: 40px;
+	width: 40px;
+}
+
+.slick-arrow:before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-right: 2px solid @link-color;
+	border-bottom: 2px solid @link-color;
+	position: absolute;
+	top: 10px;
+}
+
+.slick-dots {
+	font-family: @titles;
+	font-weight: @big-weight;
+	font-size: @med-size;
+	bottom: 0;
+}
+
+.slick-dots li {
+	margin: 0;
+}
+
+.slick-dots a:hover {
+	color: @link-color;
+}
+
 .face {
 	width: 200px;
+	position: relative;
 
 	&__img {
 		display: block;
@@ -21,6 +89,9 @@
 	}
 
 	&__name {
+		position: absolute;
+		top: 65%;
+		left: 0;
 		display: block;
 		padding: 5px;
 		background-color: #000;
@@ -41,13 +112,28 @@
 		margin: 0;
 	}
 
+	&__subtitle {
+		font-family: @titles;
+	}
+
 	&__text {
 		width: 80%;
 	}
+
+	&__more-info {
+		border-bottom: 2px solid @link-color;
+		padding-bottom: 5px;
+	}
+}
+
+.cost {
+	margin-left: 50px;
 }
 
 .cost span {
 	display: block;
+	margin-bottom: 25px;
+	font-family: @titles;
 	font-size: 30px;
 	font-weight: @med-weight;
 }

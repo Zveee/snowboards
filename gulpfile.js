@@ -31,6 +31,12 @@ const notify = require('gulp-notify');
 const plumber = require('gulp-plumber');
 const cleanCSS = require('gulp-cleancss');
 const pug = require('gulp-pug');
+const streamqueue = require('streamqueue'); // Pipe queued streams progressively, keeping datas order.
+const rigger = require('gulp-rigger'); // // Include content of one file to another
+const jshint = require('gulp-jshint'); // JS code linter
+const stylish = require('jshint-stylish'); // Reporter for JSHint
+const size = require('gulp-size'); // Display the size of something
+
 
 // ЗАДАЧА: Компиляция препроцессора
 gulp.task('less', function(){
@@ -134,18 +140,36 @@ gulp.task('clean', function () {
 });
 
 // ЗАДАЧА: Конкатенация и углификация Javascript
+// gulp.task('js', function () {
+//   return gulp.src([
+//       // список обрабатываемых файлов
+//       dirs.source + '/js/jquery-3.1.0.min.js',
+//       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
+//       dirs.source + '/js/slick.min.js',
+//       dirs.source + '/js/script.js',
+//     ])
+//     .pipe(plumber({ errorHandler: onError }))
+//     .pipe(concat('script.min.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest(dirs.build + '/js'));
+// });
+
 gulp.task('js', function () {
-  return gulp.src([
-      // список обрабатываемых файлов
-      dirs.source + '/js/jquery-3.1.0.min.js',
-      dirs.source + '/js/jquery-migrate-1.4.1.min.js',
-      dirs.source + '/js/owl.carousel.min.js',
-      dirs.source + '/js/script.js',
-    ])
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(concat('script.min.js'))
+  return streamqueue(
+    { objectMode: true },
+    // gulp.src(pathTo.src.JS).pipe(rigger()).pipe(size({title: 'JavaScript'})),
+    gulp.src(dirs.source + "/js/script.js").pipe(rigger()).pipe(jshint()).pipe(jshint.reporter(stylish)).pipe(size({title: 'JavaScript'}))
+  )
+    .pipe(concat(dirs.build + "/js/script.js"))
+    .pipe(sourcemaps.init())
+    .pipe(gulp.dest(dirs.build + "/js"))
+    .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
-    .pipe(gulp.dest(dirs.build + '/js'));
+    .pipe(sourcemaps.write('./'))
+    .pipe(size({
+      title: 'Total JavaScript'
+    }))
+    .pipe(gulp.dest(dirs.build + "/js"));
 });
 
 // ЗАДАЧА: Кодирование в base64 шрифта в формате WOFF

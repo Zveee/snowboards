@@ -7,21 +7,23 @@ head
 	link(rel='stylesheet', href='../less/blocks/normalize.css')
 	link(rel='stylesheet', href='../css/style.css')
 	link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|Rubik:400,500,700,900&amp;subset=cyrillic-ext')
+	
+
 body
 
 	header.page-header
 
 		.page-header__inner
+			a.page-header__logo(href="#")
+				img(src="../img/logo.png", alt="logo")
 			ul.page-header__menu
-				li.menu__item
-					img.logo(src="../img/logo.png", alt="")
-				li.menu__item
+				li.menu__item.nav
 					a(href="#") расписание 
-				li.menu__item
+				li.menu__item.nav
 					a(href="#") инструкторы
-				li.menu__item
+				li.menu__item.nav
 					a(href="#") стоимость
-				li.menu__item
+				li.menu__item.nav
 					a(href="#") как добраться
 				li.menu__item
 					a.tel(href="tel:8-800-800-80-80") 8 (800) 800-80-80
@@ -148,37 +150,123 @@ body
 
 		section.promo__cards
 
-			.cards__inner
+			.cards__inner.slider
 
-				.cards__item
-					.face
-						img.face__img(src="../img/face.png", alt="")
-						span.face__name
-							| Константин Константинопольский
+				.slider-item
+					.cards__item
+						.face
+							img.face__img(src="../img/face.png", alt="")
+							span.face__name
+								| Константин Константинопольский
 
-					.description
-						h3.description__title
-							| Free Ride / продвинутый уровень
-						p.description__text
-							| Дата занятия - 30 марта 2017 года.
-						h2.description__subtitle
-							| Абонемент на разовое посещение (3 часа)
-						p.description__text
-							| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.
-						a.more(href="#") Узнать больше
+						.description
+							h3.description__title
+								| Free Ride / продвинутый уровень
+							p.description__text
+								| Дата занятия - 30 марта 2017 года.
+							h2.description__subtitle
+								| Абонемент на разовое посещение (3 часа)
+							p.description__text
+								| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.
+							a.description__more-info(href="#") Узнать больше
 
-					.cost
-						span
-							| 2000 Р
-						a.button(href="#") КУПИТЬ
+						.cost
+							span
+								| 2 000 &#8381;
+							a.button(href="#") КУПИТЬ
 
-				
-				.cards__pages
-					a(href="#") 1
-					a(href="#") 2
-					a(href="#") 3
-					a(href="#") 4
-					a(href="#") 5
+				.slider-item
+					.cards__item
+						.face
+							img.face__img(src="../img/face.png", alt="")
+							span.face__name
+								| Константин Константинопольский
+
+						.description
+							h3.description__title
+								| Free Ride / продвинутый уровень
+							p.description__text
+								| Дата занятия - 30 марта 2017 года.
+							h2.description__subtitle
+								| Абонемент на разовое посещение (3 часа)
+							p.description__text
+								| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.
+							a.description__more-info(href="#") Узнать больше
+
+						.cost
+							span
+								| 2 000 &#8381;
+							a.button(href="#") КУПИТЬ
+
+				.slider-item
+					.cards__item
+						.face
+							img.face__img(src="../img/face.png", alt="")
+							span.face__name
+								| Константин Константинопольский
+
+						.description
+							h3.description__title
+								| Free Ride / продвинутый уровень
+							p.description__text
+								| Дата занятия - 30 марта 2017 года.
+							h2.description__subtitle
+								| Абонемент на разовое посещение (3 часа)
+							p.description__text
+								| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.
+							a.description__more-info(href="#") Узнать больше
+
+						.cost
+							span
+								| 2 000 &#8381;
+							a.button(href="#") КУПИТЬ
+
+				.slider-item
+					.cards__item
+						.face
+							img.face__img(src="../img/face.png", alt="")
+							span.face__name
+								| Константин Константинопольский
+
+						.description
+							h3.description__title
+								| Free Ride / продвинутый уровень
+							p.description__text
+								| Дата занятия - 30 марта 2017 года.
+							h2.description__subtitle
+								| Абонемент на разовое посещение (3 часа)
+							p.description__text
+								| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.
+							a.description__more-info(href="#") Узнать больше
+
+						.cost
+							span
+								| 2 000 &#8381;
+							a.button(href="#") КУПИТЬ
+
+				.slider-item
+					.cards__item
+						.face
+							img.face__img(src="../img/face.png", alt="")
+							span.face__name
+								| Константин Константинопольский
+
+						.description
+							h3.description__title
+								| Free Ride / продвинутый уровень
+							p.description__text
+								| Дата занятия - 30 марта 2017 года.
+							h2.description__subtitle
+								| Абонемент на разовое посещение (3 часа)
+							p.description__text
+								| Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.
+							a.description__more-info(href="#") Узнать больше
+
+						.cost
+							span
+								| 2 000 &#8381;
+							a.button(href="#") КУПИТЬ
+
 
 		section.callback
 
@@ -186,32 +274,143 @@ body
 
 				h2.title
 					| Заказать обратный звонок
-				form.callback.form
-					span.form__subtitle
+				form.callback-form
+					span.callback-form__subtitle
 						| *Имя
-					input.form__input(type="text")
+					input.callback-form__item(type="text")
 
-					span.form__subtitle
+					span.callback-form__subtitle
 						| *Фамилия
-					input.form__input(type="text")
+					input.callback-form__item(type="text")
 
-					span.form__subtitle
+					span.callback-form__subtitle
 						| *Телефон
-					input.form__input(type="tel")
+					input.callback-form__item(type="tel")
 
-					span.form__subtitle
+					span.callback-form__subtitle
 						| Ваше сообщение
-					textarea.form__input(type="text")
+					textarea.callback-form__item(type="text")
 
-					input.form__input(type="submit" value="Отправить")
+					input.button(type="submit" value="ОТПРАВИТЬ")
 
 
 
 	footer.page-footer
 
 		.page-footer__inner
-		
-			
+
+			.page-footer__connection
+				a.connection__logo(href="#")
+					img(src="../img/logo.png", alt="")
+
+				ul.connection__social
+					li.connection__social-item
+						a.share(href="#").
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+								<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+										<rdf:Description rdf:about=""/>
+								</rdf:RDF>
+							</x:xmpmeta>
+							<?xpacket end="w"?></metadata>
+							<defs>
+									<style>
+										.cls-1 {
+											opacity: 0.9;
+										}
+									</style>
+								</defs>
+								<image id="youtube-logo" class="cls-1" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhBwkUMxLCGe7JAAACt0lEQVRIx6XVX2hWdRzH8dc5e/445yaPumY5aZEXioKQRbR2U2AsiG4kK4qWBoHRxRAkCrqRJkFakKxulLRAJBICyVbr34UIRt5EEqTVFsqiNTfdnO75d7zw9GzPc57gKX+/m3O+fL/v8/1+ft/z+wY5+rxgpf++/nTQ4SD3lLf/R/A/a2eQOytXZTppjZXG/K67AcBkkBuVrjJ1azFsixFnGgAUQvka00vO4jdbGiohH4pqTE/IGtTiOeyy3SiOeEXkDe8mAFGYMGX1GNCh01bHTHgIX/pI5D37kykkATyGTTip3yHXTdkIVuhqDPAA7gMlU7gs+HcR6gEWIxs/lxAqI6yPqQfIYy7WYymaK0KXk86pOoASLoHhuPYSdhvX2lgGqz2rG6e0+s4BPK9Xqx12JJ2D3C+WVN4uGHZB0VITrmo3ZlqXMctFOoTmzOm0WWclYmYh4GP9GllN9noyCfhRr2Z3KQuUnVeKXdqs9qvrNZDP496YmddgPz70lW987VttFfvjhq1PZDGYPIVL+MCIZ/xsyGTFnsFEAvB38hQCnLALx7zldbtlHHKPc+hx2NNY5wufuG1h3DzgZuvciWXYrk/GI9a5iFdt1ofjVrnXp7iSBMxWpThiVIRpWbzoe2kZiz1sqy6MJzWo06a4+VecNm6ZRcretGpBvlWAbFVYIFIm/guWSMfH2uW4A2hPlrCoCpBScg2BMqYUZERC/d7xKJqSGaQqZ9GMWWvtQV4RBz3oohmsdb/e2K8GEMZKFF3DkA16FOUFCrLaHBF534Am+5gfBfOtPGgATVaYNS1wt/M6TCvI+csaf8hjk8APeM3LYCbIndMSf7vXTxpb6w3FKlwNZSolfGabO+peMQvFvd02JyoiZmpHW9m4gmK8C4pISUvFO6296hKavOXhmnJU9hbG+9EbIqPAvNrUtv8AAAAASUVORK5CYII="/>
+							</svg>
+
+					li.connection__social-item
+						a.share(href="#").
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+								<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+										<rdf:Description rdf:about=""/>
+								</rdf:RDF>
+							</x:xmpmeta>                           
+							<?xpacket end="w"?></metadata>
+							<defs>
+									<style>
+										.cls-1 {
+											opacity: 0.9;
+										}
+									</style>
+								</defs>
+								<image id="instagram-logo" class="cls-1" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhBwkUMxLCGe7JAAACSklEQVRIx63VO0wUURQG4G+WzSo0ZksRCeIjCBEKjY9gjJFFLYwxkcoGYySxtDAWmtDZ2FlLjGBhCJQao6JRoxZGY0AB42NVFCws7MAQN1jMuC67A6yPv7vn/P9/58w9954gLY8D9mpSrcLCyJky6pZrvwJBZNDsnM3KxzNnjfw22OtylJgx4fuC35CzXK3KaHXUrdBgg3vgrQvu+rbE3iu0OWkd2O11kOahegzpNFd2CX0yyNoZpNv14pNtZQnbZbx0BU/UoLOi8oz1OOVNGfIdrmrR7qthkw5iWUIjpt2MFVTbbrvqgv1DHMIN02hMSuOjHyXi4zpsEmDOC4N6MOAEuIQ5H22UTkphtki81kUN+VWgWbMjuoxrs9/z6NRmkUrKUXTute5IgTEvsEkjGtyxy7jxPK8CuWRM5YNSeO+0R1Gk1XlrpAzaWkxOlMg71WBSJi/nkYxJ1Ohc2qAr+oUz86IzjhdkFzFYqR6jhkuMh42i3srFDerAU3F4WsBYpIQ/RLHBB7AllrulgLGgwRdZNGkpkbdoQtaXpUq4CHryz0aISj0F2UUNen3GKkNa87FWQ1bhs95ielwndnggZY2Bea3MrI5ScjLs6HmxCW3RZWqMpPBKl4l5vBwqEuGdKrJ9Z49uI9ETN2dEtz3eFbFSmA3Sj9WZ1hDzIlCtFhOmYnJJr1T5kDSmTpV9rseQpmKlIfapwlhCP+j2pwgV/Qm3ZbFan6BscaDPamTdTuAYyLjvsPSS4rTD7ssQKv/LaOOfh2uIvxrvPwHnj5wPiKOgwAAAAABJRU5ErkJggg=="/>
+							</svg>
+
+					li.connection__social-item
+						a.share(href="#").
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="33" viewBox="0 0 18 33">
+								<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+										<rdf:Description rdf:about=""/>
+								</rdf:RDF>
+							</x:xmpmeta>                           
+							<?xpacket end="w"?></metadata>
+							<defs>
+									<style>
+										.cls-1 {
+											opacity: 0.9;
+										}
+									</style>
+								</defs>
+								<image id="facebook-logo" class="cls-1" width="18" height="33" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAhCAQAAAB+KTPfAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhBwkUMxLCGe7JAAABBUlEQVQ4y+2TsWoCQRCGv11PvUIEjWgKiZhOhDTaBFJZiI2Nz5AXyCvkDdKkCOl9AMUnCNimtdPKNIqEEAjKbQpFZ+8ut6R3qn93P2b/mdlVBSLRp0uTCikMCnjxQkCJZ+5Ce20b8plQjWReaWv5FIMAEqrTj0PISGhAfCjp6cY6mjNkg8HjTUJFobcM+ABYhzz5sqI9EjVurEx/VPcjdCAhjyzXhyx56+oGBlBFw0wVHrknOR40NVxxpfl0Ql/aiQAaN6Y0F04o5/HKEkWAocfpmX4zIkCj2TFW4vmOaB31gtu9CM8ubTXZMi4M2nbjoYQWnKH/QmWhLyUkZzSlc9Tv8oP9AkrxKtiT8ljLAAAAAElFTkSuQmCC"/>
+						</svg>
+
+					li.connection__social-item
+						a.share(href="#").
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="24" viewBox="0 0 40 24">
+								<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+										<rdf:Description rdf:about=""/>
+								</rdf:RDF>
+							</x:xmpmeta>
+							<?xpacket end="w"?></metadata>
+							<defs>
+									<style>
+										.cls-1 {
+											opacity: 0.9;
+										}
+									</style>
+								</defs>
+								<image id="vk" class="cls-1" width="40" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAYCAQAAAAijXdLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhBwkUMxLCGe7JAAACCElEQVQ4y52Vz0tUURTHP+81k0G1mEsQbaRfRsK0ahEhEkKroBoKiomSkGqhk60kkhChXKhR9B9ECIFgGVMRVIQ1CyEiLEoLykURRHGIiChixhbzfN45984Q72ze93y/53y599zLu8EC9cPsZDMpqiUBFZ7xRteIyoNMjiwLUVOaWRmP7Y4yoqp/0caXGuY06/gTdS/jL0+DzGfV1C2TkeF2DnJcqSe4Z2VnOaNXHDKhmIvxZp5LP5NKtSfURI8zpZmQYT04k7Oyh0otW/gIKcdwJJRP3FdkX83U1Mwt3OvYTcvjEJw1bjB7YvydenGStc44TkEI8pZHSho1AY0jxTmH65VvEAIwoKQMFyK0QimV6DvkKDdlAiJDmaeo5C6zBYBViq8eSjvHFP9RClUQRsR5ZwPXTRrI6vkCzYw51flFEBnKVy6pkmaKppPDii1Q4DZpxfbJh0UYLN1U85I1JIkpyS8loSV0J7KDB3ZiGUqJG4kMu4x14kHt7yvhtl+xX367Wwac6/B/sY27ZrXXUGboT2TZyh3T5Fshco2rDVvztDHt4VsomsBjCDLMaF27ElPMc4CSR8sy5jUEuUIPP+sYVuMQrz1qh+n0GoLcYhfjHuFHjPbx3qMPBg1fvRZytLM1/kVU2M1cLK/kMntVy2xDQwADG9lEhhRl3vFCyTtYz/L4oS3z5B/wqH4NBNdVuwAAAABJRU5ErkJggg=="/>
+							</svg>
+
+				.connection__contacts
+					a.tel(href="tel:8-800-800-80-80") 8 (800) 800-80-80
+					a.mail(href="mailto:hello@iceace.com") hello@iceace.com
+
+
+			.page-footer__info
+				.info__copyright
+					span
+						| © 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены
+
+				.info__submenu
+					ul.submenu__list
+						li.submenu__item
+							a(href="#") расписание 
+						li.submenu__item
+							a(href="#") инструкторы
+						li.submenu__item
+							a(href="#") стоимость
+						li.submenu__item
+							a(href="#") как добраться
+
+	script(type="text/javascript" src="../js/build/js/script.js")
+
+
+
+
+
 
 
 
